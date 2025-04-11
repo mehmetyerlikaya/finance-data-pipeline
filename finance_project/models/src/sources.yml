@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_financial
+    schema: public             # Add this line to force the schema to be public
+    description: "External source for raw financial transaction data loaded from CSV."
+    tables:
+      - name: fact_financial_transactions
+        description: "Raw financial transaction data as loaded into PostgreSQL."

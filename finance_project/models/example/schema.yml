@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fact_financial_transactions
+    description: "A table containing raw financial transaction data."
+    columns:
+      - name: transaction_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_date
+    description: "A date dimension extracted from transaction dates in fact_financial_transactions."
+    columns:
+      - name: date_id
+        tests:
+          - unique
+          - not_null
+

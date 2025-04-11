@@ -71,7 +71,4 @@ This project simulates an end-to-end financial reporting pipeline that modernize
 - Integrate real-world financial data.
 - Build additional models/dimensions to enhance reporting.
 
----
-
-Feel free to modify this README template to better reflect your project details and personal insights.
 

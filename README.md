@@ -25,28 +25,26 @@ This project simulates an end-to-end financial reporting pipeline that modernize
 - **Git & GitHub**
 
 ## File Structure
-finance_project/
-├── README.md                 # Project documentation
-├── requirements.txt          # Python dependencies
-├── generate_data.py          # Script to generate synthetic financial data
-├── fact_financial_transactions.csv # CSV file generated from synthetic data
-├── dbt_project.yml           # dbt project configuration
-├── seeds/
-
-│   └── fact_financial_transactions.csv  # CSV file for seeding data into PostgreSQL
-├── models/
-│   ├── src/
-│   │   └── sources.yml       # External source definitions (raw data)
-│   └── example/
-│       ├── stg_fact_financial_transactions.sql  # Transformation model for raw data
-│       ├── dim_date.sql      # Date dimension model
-│       ├── my_first_dbt_model.sql  # Example model (demo)
-│       ├── my_second_dbt_model.sql # Example model (demo)
-│       └── schema.yml        # Tests for models
-├── macros/                   # (Optional) Custom macros for dbt models
-├── analyses/                 # (Optional) Exploratory analysis files
-└── snapshots/                # (Optional) Snapshot configurations
-
+- `finance_project/`
+  - `README.md` — Project documentation
+  - `requirements.txt` — Python dependencies
+  - `generate_data.py` — Script to generate synthetic financial data
+  - `fact_financial_transactions.csv` — CSV file generated from synthetic data
+  - `dbt_project.yml` — dbt project configuration
+  - `seeds/`
+    - `fact_financial_transactions.csv` — CSV file for seeding data into PostgreSQL
+  - `models/`
+    - `src/`
+      - `sources.yml` — External source definitions (raw data)
+    - `example/`
+      - `stg_fact_financial_transactions.sql` — Transformation model for raw data
+      - `dim_date.sql` — Date dimension model
+      - `my_first_dbt_model.sql` — Example model (demo)
+      - `my_second_dbt_model.sql` — Example model (demo)
+      - `schema.yml` — Tests for models
+  - `macros/` — (Optional) Custom macros for dbt models
+  - `analyses/` — (Optional) Exploratory analysis files
+  - `snapshots/` — (Optional) Snapshot configurations
 
 
 ## How to Run the Project

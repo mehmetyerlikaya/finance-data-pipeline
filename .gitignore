@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# dbt artifacts
+target/
+dbt_packages/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
